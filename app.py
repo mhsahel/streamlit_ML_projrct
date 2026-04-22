@@ -12,8 +12,8 @@ st.markdown("""
     <br>
 """, unsafe_allow_html=True)
 
-st.title("Note Summary and quize Generator")
-st.write("Upload upto 3 images to generate Note summary and quizes")
+st.title("Note Summary and quiz Generator")
+st.write("Upload upto 3 images to generate Note summary and quizzes")
 st.divider()
 with st.sidebar:
     images = st.file_uploader("upload your images: ", type = ['jpg','jpeg','png'], accept_multiple_files= True)
@@ -32,7 +32,7 @@ with st.sidebar:
                     st.image(img)
                         
         
-    select = st.selectbox("Enter the difficulty of Quize", ("Easy","Medium","Hard") ,  index = None)  
+    select = st.selectbox("Enter the difficulty of Quiz", ("Easy","Medium","Hard") ,  index = None)  
         
     press = st.button("Click the button to initiate AI", type = "primary") 
     
