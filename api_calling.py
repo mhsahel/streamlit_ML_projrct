@@ -12,7 +12,7 @@ def note_generator(images):
  professional terminology. Deliver the entire response in plain text format without the use of markdown characters."""
    
     response = client.models.generate_content(
-    model="gemini-3.1-flash-lite-preview",
+    model="gemini-3.1-flash-lite",
     contents=[images , prompt]
 )
     return response.text
@@ -25,4 +25,5 @@ def quize_generator(images , info):
 )
     return response.text
     
+
 
